@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Krafted DynaMix Solutions</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Krafted DynaMix Solutions</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="engagement.html">Engagement</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-light text-primary ms-lg-3 px-3 py-1" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <h1 class="mb-2">About</h1>
+      <p class="text-muted mb-0">
+        A boutique consulting firm focused on crafting practical solutions around
+        Microsoft Dynamics 365, Power Platform, and Azure.
+      </p>
+    </div>
+  </header>
+
+  <!-- ABOUT CONTENT -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <h2 class="h4 fw-bold mb-3">Who We Are</h2>
+          <p class="text-muted">
+            Krafted DynaMix Solutions is a specialised consulting practice dedicated to
+            helping organisations design, implement, and stabilise their Dynamics 365
+            landscape. We blend technical expertise with a strong understanding of
+            finance and operations.
+          </p>
+          <p class="text-muted">
+            Our projects typically involve complex business scenarios but limited time
+            and internal capacity. We aim to be a pragmatic partner — focusing on
+            stable, well-documented solutions rather than chasing every possible feature.
+          </p>
+
+          <h3 class="h5 fw-bold mt-4 mb-2">Our Principles</h3>
+          <ul class="text-muted">
+            <li><strong>Clarity first:</strong> establish a clear problem statement and solution outline.</li>
+            <li><strong>Design with the future in mind:</strong> avoid unnecessary complexity, follow best practices.</li>
+            <li><strong>Documentation is part of delivery:</strong> not an afterthought.</li>
+            <li><strong>Respect for operations:</strong> changes should support, not disrupt, day-to-day work.</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="p-4 bg-light rounded-4 shadow-sm h-100">
+            <h2 class="h5 fw-bold mb-3">Founder & Principal Consultant</h2>
+            <p class="text-muted mb-2"><strong>Premal Raval</strong></p>
+            <ul class="text-muted small mb-3">
+              <li>11+ years of experience in Microsoft Dynamics 365 Finance & Operations (and AX)</li>
+              <li>Microsoft Certified professional</li>
+              <li>Hands-on in implementation, enhancements, and support</li>
+              <li>Comfortable working with both technical and business stakeholders</li>
+            </ul>
+            <p class="text-muted small mb-0">
+              Premal has worked across multiple industries and geographies, bringing a
+              consistent focus on maintainable architecture, meaningful automation, and
+              production stability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h3 class="h6 fw-bold mb-2">Domain Focus</h3>
+          <p class="small text-muted mb-0">
+            Finance, operations, professional services, and organisations that depend on
+            accurate, timely business data.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 fw-bold mb-2">Technology Focus</h3>
+          <p class="small text-muted mb-0">
+            Dynamics 365 F&O, Dynamics 365 CRM/CE, Power Apps, Power Automate,
+            Azure-based integrations, and related Microsoft cloud services.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 fw-bold mb-2">Engagement Style</h3>
+          <p class="small text-muted mb-0">
+            Remote-first, collaborative, and transparent. We are comfortable working
+            alongside internal teams, other partners, and distributed stakeholders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-light">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <small>© <span id="year"></span> Krafted DynaMix Solutions. All rights reserved.</small>
+      <small>
+        Email:
+        <a href="mailto:inquire@krafteddynamix.com" class="text-decoration-none text-light">
+          inquire@krafteddynamix.com
+        </a>
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

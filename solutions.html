@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solutions | Krafted DynaMix Solutions</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Krafted DynaMix Solutions</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="solutions.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="engagement.html">Engagement</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-light text-primary ms-lg-3 px-3 py-1" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <h1 class="mb-2">Solutions</h1>
+      <p class="text-muted mb-0">
+        Predefined solution patterns built from real project experience in finance,
+        CRM, and cloud integration.
+      </p>
+    </div>
+  </header>
+
+  <!-- SOLUTIONS GRID -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img
+              src="assets/img/solutions-finance.jpg"
+              class="card-img-top"
+              alt="Finance automation solution in D365"
+            />
+            <div class="card-body">
+              <h2 class="h6 fw-bold mb-2">Finance Automation Toolkit for D365 F&O</h2>
+              <p class="small text-muted mb-2">
+                A set of accelerators that improve visibility, control, and accuracy in
+                your finance operations.
+              </p>
+              <ul class="small text-muted mb-0">
+                <li>Vendor invoice tracking with status and ownership</li>
+                <li>Ageing exposure views across dimensions</li>
+                <li>Enhancements to free-text invoice workflows</li>
+                <li>Configurable reports for finance leadership</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img
+              src="assets/img/solutions-crm-proserv.jpg"
+              class="card-img-top"
+              alt="CRM solution for professional services"
+            />
+            <div class="card-body">
+              <h2 class="h6 fw-bold mb-2">CRM for Professional Services</h2>
+              <p class="small text-muted mb-2">
+                Dynamics 365 CRM tailored for law firms, consulting firms, and other
+                B2B service organisations.
+              </p>
+              <ul class="small text-muted mb-0">
+                <li>Lead and opportunity management with stages</li>
+                <li>Activity, email, and meeting tracking</li>
+                <li>Document storage through SharePoint integration</li>
+                <li>Simple dashboards for partners and managers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img
+              src="assets/img/solutions-azure-integrations.jpg"
+              class="card-img-top"
+              alt="Azure based integration and logging"
+            />
+            <div class="card-body">
+              <h2 class="h6 fw-bold mb-2">Azure-backed Integration Layer</h2>
+              <p class="small text-muted mb-2">
+                A reusable integration pattern that standardises how external systems
+                connect to Dynamics 365.
+              </p>
+              <ul class="small text-muted mb-0">
+                <li>Logic Apps and Functions patterns for APIs and batch jobs</li>
+                <li>Application Insights-based logging and dashboards</li>
+                <li>Key Vault for secure secret management</li>
+                <li>Retry and alert patterns for better reliability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-light rounded-4 h-100 shadow-sm">
+            <h2 class="h6 fw-bold mb-2">Image & Document Storage with Azure Blob</h2>
+            <p class="small text-muted mb-2">
+              Store operational images and documents (e.g., field service photos, signed
+              documents) in Azure Blob Storage while keeping links and metadata inside
+              Dynamics 365.
+            </p>
+            <ul class="small text-muted">
+              <li>Blob storage containers per entity or business area</li>
+              <li>Metadata stored in D365 F&O or D365 CRM</li>
+              <li>Retention and access control aligned with security roles</li>
+              <li>Options for cost optimisation and lifecycle policies</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="p-4 bg-light rounded-4 h-100 shadow-sm">
+            <h2 class="h6 fw-bold mb-2">Operational Dashboards & KPIs</h2>
+            <p class="small text-muted mb-2">
+              Dashboard patterns that combine D365 data with simple visualisations for
+              decision-makers.
+            </p>
+            <ul class="small text-muted">
+              <li>Finance dashboards (cash flow, ageing, overdue items)</li>
+              <li>Sales dashboards (pipeline, win rate, activity levels)</li>
+              <li>Operational dashboards (tickets, SLAs, exceptions)</li>
+              <li>Power BI and in-application charts where appropriate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <p class="text-muted mb-2">
+          Interested in adapting one of these solution patterns to your environment?
+        </p>
+        <a href="contact.html" class="btn btn-primary">Discuss Your Scenario</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-light">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <small>© <span id="year"></span> Krafted DynaMix Solutions. All rights reserved.</small>
+      <small>
+        Email:
+        <a href="mailto:inquire@krafteddynamix.com" class="text-decoration-none text-light">
+          inquire@krafteddynamix.com
+        </a>
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
