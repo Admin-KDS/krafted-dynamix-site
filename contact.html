@@ -66,17 +66,26 @@
             with a relevant and structured view rather than a generic introduction.
           </p>
 
-          <!--
-            NOTE:
-            - Replace the action URL with your actual form handler (e.g. Formspree, custom API, etc.).
-            - CAPTCHA is integrated using Google reCAPTCHA v2 (checkbox).
-          -->
+          <!-- Contact form wired to Formspree -->
           <form
             id="contactForm"
             method="post"
-            action="#"
-            novalidate
+            action="https://formspree.io/f/xrbnnydl"
           >
+            <!-- Formspree metadata -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="Krafted DynaMix Solutions - Website enquiry"
+            />
+            <input type="hidden" name="_language" value="en" />
+            <!-- Redirect back to this page after successful submit -->
+            <input
+              type="hidden"
+              name="_redirect"
+              value="https://www.krafteddynamix.com/contact.html"
+            />
+
             <div class="row g-3">
               <div class="col-md-6">
                 <label for="name" class="form-label">Full name</label>
@@ -89,6 +98,7 @@
                   required
                 />
               </div>
+
               <div class="col-md-6">
                 <label for="email" class="form-label">Business email</label>
                 <input
@@ -100,6 +110,7 @@
                   required
                 />
               </div>
+
               <div class="col-md-6">
                 <label for="company" class="form-label">Company</label>
                 <input
@@ -110,6 +121,7 @@
                   placeholder="Organisation / Client name"
                 />
               </div>
+
               <div class="col-md-6">
                 <label for="topic" class="form-label">Primary area of interest</label>
                 <select class="form-select" id="topic" name="topic">
@@ -122,6 +134,7 @@
                   <option value="other">Other / Not sure</option>
                 </select>
               </div>
+
               <div class="col-md-6">
                 <label for="timeline" class="form-label">Indicative timeline</label>
                 <input
@@ -132,6 +145,7 @@
                   placeholder="e.g. 4–8 weeks, Q1 2026, ASAP"
                 />
               </div>
+
               <div class="col-md-6">
                 <label for="budget" class="form-label">Indicative budget (optional)</label>
                 <input
@@ -142,6 +156,7 @@
                   placeholder="Optional"
                 />
               </div>
+
               <div class="col-12">
                 <label for="message" class="form-label">Brief description</label>
                 <textarea
@@ -152,16 +167,6 @@
                   placeholder="Current environment, key challenges, and what you’d like support with."
                   required
                 ></textarea>
-              </div>
-
-              <!-- reCAPTCHA -->
-              <div class="col-12">
-                <!--
-                  IMPORTANT:
-                  - Replace YOUR_RECAPTCHA_SITE_KEY with the actual site key from Google reCAPTCHA.
-                  - This is reCAPTCHA v2 (“I'm not a robot” checkbox).
-                -->
-                <div class="g-recaptcha" data-sitekey="6LeUQissAAAAAGbmG1tLosbjzwGwox-kSt4IKmiO"></div>
               </div>
 
               <div class="col-12">
@@ -215,23 +220,9 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Google reCAPTCHA -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-  <!-- Small script for dynamic year + basic CAPTCHA guard -->
+  <!-- Small script for dynamic year -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Optional: basic client-side check to ensure reCAPTCHA is ticked
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-      if (typeof grecaptcha !== "undefined") {
-        var response = grecaptcha.getResponse();
-        if (!response || response.length === 0) {
-          e.preventDefault();
-          alert("Please verify that you are not a robot before submitting.");
-        }
-      }
-    });
   </script>
 </body>
 </html>
